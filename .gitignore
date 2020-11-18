@@ -1,0 +1,12 @@
+# ignore everything in the "wp-content" directory, except:
+# "mu-plugins", "plugins", "themes" directory
+.htaccess
+/index.php
+license.txt
+readme.html
+xmlrpc.php
+wp-*
+!wp-content/
+!wp-content/plugins
+!wp-content/themes
+!wp-content/themes/sogotcha/assets/.sass-cache
