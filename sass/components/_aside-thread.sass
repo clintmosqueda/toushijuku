@@ -1,0 +1,33 @@
+.aside-thread
+
+.aside-thread-heading
+	margin-bottom: 16px
+
+.aside-thread-list
+	margin-bottom: 30px
+
+.aside-thread-item
+	margin-bottom: 16px
+
+.aside-thread-link
+	font-size: 18px
+	font-weight: 500
+	text-decoration: underline
+	color: $blue
+	letter-spacing: 0.05em
+	line-height: 1.3
+
+	@include viewport($breakpoint-mobile, min)
+		&:hover
+			text-decoration: none
+
+.aside-thread-more
+	font-size: 18px
+	font-weight: 600
+	color: $blue
+	letter-spacing: 0.06em
+	text-decoration: underline
+
+	@include viewport($breakpoint-mobile, min)
+		&:hover
+			text-decoration: none

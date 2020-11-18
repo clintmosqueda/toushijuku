@@ -1,0 +1,20 @@
+.button
+	width: 264px
+	height: 41px
+	display: flex
+	justify-content: center
+	align-items: center
+	color: $white
+	font-size: 16px
+	font-weight: bold
+	letter-spacing: 0.06em
+	background-image: url('#{$image-path}/button.png')
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	transition-duration: $duration
+	transition-timing-function: $timing-function 
+	transition-property: filter
+
+	&:hover
+		filter: sepia(0.5)

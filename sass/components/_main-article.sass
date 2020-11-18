@@ -1,0 +1,84 @@
+.main-article
+	margin-top: 45px
+	max-width: 620px
+	width: 100%
+
+.main-article-heading
+	margin-bottom: 25px
+	position: relative
+
+	span
+		font-size: 14px
+		color: $red
+		position: absolute
+		top: 4px
+		right: -51px
+		letter-spacing: 0.06em
+
+.main-article-list
+	padding: 0
+	margin: 37px 0 19px 0
+
+.main-article-item
+	padding: 0
+	position: relative
+	
+	&:not(:last-child)
+		margin-bottom: 12px
+
+.main-article-list-numbered
+	counter-reset: decimal
+
+.main-article-item-numbered
+	padding-left: 30px
+
+	&::before
+		position: absolute
+		top: 0
+		left: 0
+		counter-increment: decimal
+		content: counter(decimal)
+		font-size: 10px
+		font-weight: bold
+		height: 20px
+		width: 21px
+		display: block
+		background-position: center
+		background-size: cover
+		background-repeat: no-repeat
+		background-image: url('#{$image-path}/bullet-decimal.jpg')
+		padding: 6px 0 0 5px
+
+.main-article-link
+	text-decoration: underline
+	color: $blue
+	font-size: 18px
+	letter-spacing: 0.06em
+
+.main-article-detail
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-top: 10px
+	max-width: 470px
+	width: 100%
+
+	.main-article-author
+		margin-top: 0
+	
+.main-article-author
+	display: block
+	text-align: right
+	margin-top: 6px
+
+.main-article-time,
+.main-article-author
+	font-size: 14px
+	letter-spacing: 0.06em
+	
+.main-article-button
+	font-weight: bold
+	text-decoration: underline
+	color: $blue
+	font-size: 18px
+	letter-spacing: 0.06em
